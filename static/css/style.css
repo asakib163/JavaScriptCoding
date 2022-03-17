@@ -1,0 +1,111 @@
+body{
+    margin: 10px;
+}
+.container-1{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+.flex-box-container-1, .flex-box-pick-color{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* cat generator */
+.container-2{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+.flex-box-container-2{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-box-container-2 div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+.flex-box-container-2 img{
+    border: 3px solid green;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    box-shadow: 0px 50px 50px black;
+}
+.flex-box-container-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flex-box-container-3 img{
+    border: 3px solid black;
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+.flex-box-container-3 img:hover{
+    box-shadow: 0px 50px 50px greenyellow;
+}
+.flex-box-container-3 div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.custom-select{
+    border-radius: 3px;
+}
+.col{
+    border: 1px solid black;
+}
+.board{
+    margin: 3px;
+}
+.flex-black-jack-row-1{
+    background: url('/static/images/blackjackbackground.jpg');
+    color: aliceblue;
+}
+.flex-black-jack-row-2{
+    background: url('/static/images/blackjackbackground.jpg');
+    padding-top: 10px;
+}
+.flex-black-jack-row-1 div{
+    
+    height: 500px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.flex-black-jack-row-1 img{
+    margin-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 35%;
+    padding: 10px;
+}
