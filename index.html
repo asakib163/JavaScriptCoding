@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Javascript on Sterods</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>Challage 1: Your age in days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageinDays()">click me</button>
+            </div>
+            <div><button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div class="flex-box-result" id="flex-box-result">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challage 2: Cat Generator</h2>
+        <div class="flex-box-container-2">
+
+            <div>
+                <button class="btn btn-success" onclick="Generate()" id="cat_generator">Generate Cat</button>
+            </div>
+        </div>
+        <div class="flex-box-container-2">
+            <div class="flex-box-result" id="cat_result">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challage 3: Rock-Paper-Scissors</h2>
+        <div class="flex-box-container-3" id="flex-box-game-result">
+            <img src="/static/images/rock.jpg" id="rock" alt="" height="200px" width="200px" onclick="rpsGame(this)">
+            <img src="/static/images/paper.jpg" id="paper" alt="" height="200px" width="200px" onclick="rpsGame(this)">
+            <img src="/static/images/scissors.jpg" id="scissors" alt="" height="200px" width="200px"
+                onclick="rpsGame(this)">
+        </div>
+        <div>
+            <button class="btn btn-primary" style="margin-top: 10px;" id="play-again">Play Again</button>
+        </div>
+
+    </div>
+    <div class="container-2">
+        <h2 id="change-my-color">Challage 4: Change Button Color</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select class="custom-select" name="backdrop" id="background" onchange="buttoncolorchange(this)">
+                    <option selected value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!!</button>
+            <button class="btn btn-danger">Yahoo!!</button>
+            <button class="btn btn-warning">Google!!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challage 5: BlackJack </h2>
+        <h4><span id="blackjack-result">Lets Play!</span></h4>
+        <div class="board">
+            <div class="row flex-black-jack-row-1">
+                <div class="col" id="your-box">
+                    <h2>You : <span id="your-balckjack-score">0</span></h2>
+                </div>
+                <div class="col" id="bot-box">
+                    <h2>Dealer : <span id="bot-balckjack-score">0</span> </h2>
+                </div>
+            </div>
+            <div class="row flex-black-jack-row-2">
+                <div class="col">
+                    <button class="btn btn-primary" style="margin: 5px;" id="black-jack-hit-btn">Hit</button>
+                    <button class="btn btn-warning" id="black-jack-stand-btn">Stand</button>
+                    <button class="btn btn-danger" id="black-jack-deal-btn">Deal</button>
+                </div>
+            </div>
+
+            <div class="row flex-black-jack-row-3">
+                <table class="col">
+                    <tr>
+                        <th>Wins</th>
+                        <th>loses</th>
+                        <th>Draw</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
